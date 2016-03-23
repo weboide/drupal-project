@@ -20,8 +20,11 @@ for your setup.
 After that you can create the project:
 
 ```
-composer create-project drupal-composer/drupal-project:8.x-dev some-dir --stability dev --no-interaction
+composer -v create-project drupal-composer/drupal-project:8.x-dev . --repository='{"type": "vcs", "url": "git@github.com:weboide/drupal-project.git"}' --no-interaction --no-dev
 ```
+
+For a development environment you could remove the `--no-dev` option.
+
 
 With `composer require ...` you can download new dependencies to your 
 installation.
